@@ -1,0 +1,84 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"2ndChanceBooks.cl"</title>
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="../../static/css/estilo.css"><!--deben siempre llamar a la carpeta donde esta el css de esta forma-->
+<link rel="shortcut icon" href="../../static/assets/iconolibro.jpg"><!--deben siempre llamar a la carpeta donde estan las imagenes de esta forma-->
+<link href="/website/css/uicons-outline-rounded.css">
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    {% include 'base/navigation.html'%}
+        <!--Modal-->
+    <div id="myModal" class="modal">
+        <!-- Contenido del modal -->
+        <div class="modal-content">
+        <p>Bienvenido a 2ndChanceBooks</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+            Dignissimos, tempore magnam aspernatur aliquid ipsum <br>
+            nesciunt et voluptate fugit! Obcaecati ex illo aut rem,<br>
+            ducimus expedita officia magnam quaerat? Culpa,<br>
+            recusandae.</p>
+        </div>
+        </div>
+        <script src="../../static/js/index.js"></script>
+    <!--Fin Modal-->
+    <!--fin barra navegacion-->
+    <section id="main">
+        <div class="container">
+            <br>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              
+              <!-- Wrapper for slides -->
+              <section class="Carrouselcontainer">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="https://www.elindependiente.com/wp-content/uploads/2022/01/virginia-woolf-1440x808.jpg.webp" alt="Imagen de libros en fila" />
+                        <img id="slide-2" src="https://images.unsplash.com/photo-1526243741027-444d633d7365?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Libros en estantería" />
+                        <img id="slide-3" src="https://i.pinimg.com/originals/ab/1f/e7/ab1fe7347dd86de543790941a0529e86.jpg" alt="Libros en cajones" />
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="main-content">
+            <div class="main-text">
+                    <span>Recien Llegados</span>
+                    <h1>Revisa los nuevos libros añadidos</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Dignissimos, tempore magnam aspernatur aliquid ipsum <br>
+                    nesciunt et voluptate fugit! Obcaecati ex illo aut rem,<br>
+                    ducimus expedita officia magnam quaerat? Culpa,<br>
+                    recusandae.</p>
+                    <a href="{% url 'tienda' %}" class="active">Comprar Ahora</a>
+            </div>
+            <div class="main-img">
+                <img src="{% static 'assets/libro1.jpg'%}" alt="Libros">
+
+            </div>
+
+            
+        </div>
+    </section>
+        </div>
+    </div>
+    <!---fin-->
+    {% include 'base/footer.html' %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--barra navegacion-->
+<nav class="navigation">
+    <a href="#" class="logo">2ndChanceBooks</a>
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon">
+            <i class="fas fa-bars"></i>
+        </span>
+    </label>
+    <!--menu-->
+    <ul class="menu">
+        <li><a href="{% url 'index' %}" class="active">Inicio</a></li><!--conectar las paginas de esta manera-->
+        <li><a href="{% url 'tienda' %}" class="active">Tienda</a></li>
+        <li><a href="{% url 'ayuda' %}" class="active">Need Help?</a></li>
+    </ul>
+
+    <!--derecha-->
+    <div class="right-elements">
+
+        <a href="{% url 'logInForm' %}" class="user">
+            <i class="fas fa-user"></i></a>
+        
+        <!--carro-->
+        <a href="{% url 'carro' %}" class="cart">
+            <i class="fas fa-shopping-bag"></i> </a>
+        
+        
+
+    </div>
+</nav>

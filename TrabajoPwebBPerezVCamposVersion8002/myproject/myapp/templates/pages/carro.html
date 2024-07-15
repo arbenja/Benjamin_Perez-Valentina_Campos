@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Carrito</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="../../static/css/estilo.css">
+	<link rel="stylesheet" href="carroEstilo.css">
+	<link rel="shortcut icon" href="imagenes/iconolibro.jpg">
+	<link href="/website/css/uicons-outline-rounded.css">
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--barra navegacion-->
+	{% include 'base/navigation.html'%}
+<!--Fin NavBar-->
+<!--Inicio Carrito-->
+<div class="container-cart">
+
+	<h1>Carro de compras</h1>
+
+	<div class="cart">
+
+		<div class="products">
+
+			<div class="product">
+
+				<img src="https://www.penguinlibros.com/cl/1780161/la-caida.jpg">
+
+				<div class="product-info">
+
+					<h3 class="product-name">La Caída</h3>
+					<h4 class="product-name">Albert Camus</h4>
+
+					<h4 class="product-original-price">$ 10.000</h4>
+					<h4 class="product-offer">dcto. 30%</h4>
+					<h4 class="product-price">Total $ 7.000</h4>
+
+
+					<p class="product-quantity">Cantidad: <input value="1" name="">
+
+					<p class="product-remove">
+
+						<i class="fa fa-trash" aria-hidden="true"></i>
+
+						<span class="remove">Quitar</span>
+
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="product">
+
+				<img src="https://www.planetadelibros.cl/usuaris/libros/fotos/380/m_libros/379460_portada_alas-de-sangre_rebecca-yarros_202305312344.jpg">
+
+				<div class="product-info">
+
+					<h3 class="product-name">Alas de sangre</h3>
+					<h4 class="product-name">Rebecca Yarros</h4>
+
+					<h4 class="product-original-price">$ 22.000</h4>
+					<h4 class="product-offer">dcto. 20%</h4>
+					<h4 class="product-price">Total $ 17.600</h4>
+
+
+					<p class="product-quantity">Cantidad: <input value="1" name="">
+
+					<p class="product-remove">
+
+						<i class="fa fa-trash" aria-hidden="true"></i>
+
+						<span class="remove">Quitar</span>
+
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="product">
+
+				<img src="https://www.alianzaeditorial.es/imagenes/libros/grande/9788491819820-el-marino-que-perdio-la-gracia-del-mar.jpg">
+
+				<div class="product-info">
+
+					<h3 class="product-name">El marino que perdió la gracia del mar</h3>
+					<h4 class="product-name">Yukio Mishima</h4>
+
+					<h4 class="product-original-price">$ 24.000</h4>
+					<h4 class="product-offer">dcto. 10%</h4>
+					<h4 class="product-price">Total $ 21.600</h4>
+
+
+					<p class="product-quantity">Cantidad: <input value="1" name="">
+
+					<p class="product-remove">
+
+						<i class="fa fa-trash" aria-hidden="true"></i>
+
+						<span class="remove">Quitar</span>
+
+					</p>
+
+				</div>
+
+			</div>
+			<div class="cart-total">
+	
+				<p>
+	
+					<span>Valor total</span>
+	
+					<span>$32.760</span>
+	
+				</p>
+	
+				<p>
+	
+					<span>Nro. de elementos</span>
+	
+					<span>3</span>
+	
+				</p>
+	
+				<p>
+	
+					<span>Dinero ahorrado</span>
+	
+					<span>$9.800</span>
+	
+				</p>
+	
+				<a href="{% url 'pago' %}">Proceder al pago</a>
+	
+			</div>
+
+		</div>
+
+
+	</div>
+
+</div>
+<!--fin carrito----------------->
+{% include 'base/footer.html' %}
+</body>
+</html>
+
