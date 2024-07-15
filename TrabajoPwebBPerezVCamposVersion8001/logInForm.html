@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="logInEstilo.css">
+    <link rel="shortcut icon" href="imagenes/iconolibro.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--barra navegacion-->
+<nav class="navigation">
+    <a href="#" class="logo">2ndChanceBooks</a>
+    <input type="checkbox" class="menu-btn"
+    id="menu-btn">
+    <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon">
+            <i class="fas fa-bars"></i>
+        </span>
+    </label>
+    <!--menu-->
+    <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="ayuda.html">Need Help?</a></li>
+    </ul>
+
+    <!--derecha-->
+    <div class="right-elements">
+        <a href="logInForm.html" class="user">
+            <i class="fas fa-user"></i></a>
+        
+        <!--carro-->
+        <a href="carro.html" class="cart">
+            <i class="fas fa-shopping-bag"></i> </a>
+
+    </div>
+</nav>
+<!--Form-->
+<section id="main">
+    <div class="main-content">
+        <form action="" method="POST" id="form">
+            <div class="logInform">
+                <h1>Inicio de sesión</h1>
+                <div class="grupo">
+                    <input type="email" name="" id="email" ><span class="barra"></span>
+                    <label for="">Correo Electrónico</label>
+                </div>
+                <div class="grupo">
+                    <input type="password" name="" id="password" ><span class="barra"></span>
+                    <label for="">Contraseña</label>
+                </div>
+                
+                <button class="logIn-button" type="submit">Iniciar sesión</button>
+                <p class="warnings" id="warnings"></p>
+                <a href="#" class="vario"><p class="cl">¿Olvidó su contraseña?</p></a>
+                <p class="cl">ó</p>
+                <a href="registro.html" class="vario"><p class="cl">Crear cuenta</p></a>
+            </div>
+        </form>
+        <script src="logInForm.js"></script>
+    </div>
+</section>
+<!--footer-->
+<footer>
+    <div class="footer-container">
+     <div class="footer-logo-container">
+        <div class="footer-logo"><img src="https://i.pinimg.com/736x/e4/d5/7a/e4d57ae00907abfb95bc4801e4c67f82.jpg" alt="" width="150px"></div>
+        <span>Copyright 2024 - DuocUc</span>
+        <div class="footer-social">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+            <a href="https://cl.linkedin.com/"><i class="fab fa-linkedin-in>"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+     </div>
+     <div class="footer-menu">
+        <div class="footer-menu-box">
+            <strong>Productos</strong>
+            <ul>
+            <li>Libros rescatados</li>
+            <li>Libros donados</li>
+            <li>Libros de algo</li>
+            </ul>
+        </div>
+        <div class="footer-menu-box">
+            <strong>Contacto</strong>
+            <ul>
+            <li><a href="https://web.whatsapp.com/">+569-5555-5555</a></li>
+            <li><a href="https://gmail.com/">contacto@2chancebooks.com</a></li>
+            <li>lorem</li>
+            </ul>
+        </div>
+     </div>
+    </div>
+</footer>
+<span class="copyright">-Copyright 2024-</span>
+</body>
+</html>

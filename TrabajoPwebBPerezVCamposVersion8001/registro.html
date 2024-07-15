@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio de sesión</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" type="text/css" href="registroEstilo.css">
+        <link rel="shortcut icon" href="imagenes/iconolibro.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js" integrity="sha512-hUhvpC5f8cgc04OZb55j0KNGh4eh7dLxd/dPSJ5VyzqDWxsayYbojWyl5Tkcgrmb/RVKCRJI1jNlRbVP4WWC4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+<body>
+<!--barra navegacion-->
+    <nav class="navigation">
+     <a href="#" class="logo">2ndChanceBooks</a>
+     <input type="checkbox" class="menu-btn"
+     id="menu-btn">
+     <label for="menu-btn" class="menu-icon">
+     <span class="nav-icon">
+     <i class="fas fa-bars"></i>
+     </span>
+     </label>
+     <!--menu-->
+     <ul class="menu">
+     <li><a href="index.html">Inicio</a></li>
+     <li><a href="tienda.html">Tienda</a></li>
+     <li><a href="ayuda.html">Need Help?</a></li>
+     </ul>
+
+     <!--derecha-->
+     <div class="right-elements">
+     <a href="logInForm.html" class="user">
+     <i class="fas fa-user"></i></a>
+
+     <!--carro-->
+     <a href="carro.html" class="cart">
+     <i class="fas fa-shopping-bag"></i> </a>
+
+     </div>
+    </nav>
+<!--Form Registro-->
+<section id="main">
+    <form id="form" class="form">
+        <p class="title">Registro</p>
+            <div class="flex">
+                <label>
+                    <input id="nombre" class="input" type="text" placeholder="" required="">
+                    <span>Nombre</span>
+                </label>
+
+                <label>
+                    <input id="apellido" class="input" type="text" placeholder="" required="">
+                    <span>Apellido</span>
+                </label>
+            </div>
+
+            <label>
+                <div class="message">
+                    <p id="alerta">
+                    <span id="mensaje">
+                    Ingrese su Rut
+                    </span>
+                    </p>
+                </div>
+                <input name="rut" id="rut"
+                type="text"
+                class="input"
+                placeholder=""
+                onkeypress="return isNumber(event)"
+                oninput="checkRut(this)"
+                required=""/>
+            </label>
+            <label>
+                <input id="fechNac" class="input" type="date" min="1900-01-01" max="" required>
+                <span>Fecha de nacimiento</span>
+            </label>
+            <div class="gender-box">
+                <h3>Género</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                    <input type="radio" id="check-male" name="gender"/>
+                    <label for="check-male">Masculino</label>
+                    </div>
+
+                    <div class="gender">
+                    <input type="radio" id="check-female" name="gender" />
+                    <label for="check-female">Femenino</label>
+                    </div>
+
+                    <div class="gender">
+                    <input type="radio" id="check-other" name="gender" />
+                    <label for="check-other">Otro</label>
+                    </div>
+                </div>
+            </div>
+            <label>
+                <input id="correo" class="input" type="email" placeholder="" required="">
+                <span>Correo Electrónico</span>
+            </label> 
+
+            <div class="flex">
+                <label>
+                <input id="contraseña" class="input" type="password" placeholder="" required="">
+                <span>Contraseña</span>
+                </label>
+
+                <label>
+                <input id="contraseña2" class="input" type="password" placeholder="" required="">
+                <span>Confirmar contraseña</span>
+                </label>
+
+            </div>
+            <p class="warnings" id="warnings"></p>
+            <label>
+                <input type="checkbox" id="checkTerminos" class="check">
+                <span>Acepto los <a href="#">Terminos y condiciones</a></span>
+            </label>
+        <button class="submit">Registrarse</button>
+        <!--<p class="signin">Already have an acount ? <a href="#">Signin</a> </p>-->
+        <script src="vRut.js"></script>
+        <script src="registro.js"></script>
+    </form>
+</section>
+<!--footer-->
+    <footer>
+        <div class="footer-container">
+        <div class="footer-logo-container">
+            <div class="footer-logo"><img src="https://i.pinimg.com/736x/e4/d5/7a/e4d57ae00907abfb95bc4801e4c67f82.jpg" alt="" width="150px"></div>
+            <span>Copyright 2024 - DuocUc</span>
+            <div class="footer-social">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                <a href="https://cl.linkedin.com/"><i class="fab fa-linkedin-in>"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <div class="footer-menu-box">
+                <strong>Productos</strong>
+                <ul>
+                <li>Libros rescatados</li>
+                <li>Libros donados</li>
+                <li>Libros de algo</li>
+                </ul>
+            </div>
+            <div class="footer-menu-box">
+                <strong>Contacto</strong>
+                <ul>
+                <li><a href="https://web.whatsapp.com/">+569-5555-5555</a></li>
+                <li><a href="https://gmail.com/">contacto@2chancebooks.com</a></li>
+                <li>lorem</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <span class="copyright">-Copyright 2024-</span>
+</body>
+</html>

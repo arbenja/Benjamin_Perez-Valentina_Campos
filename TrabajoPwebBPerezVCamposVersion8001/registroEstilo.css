@@ -1,0 +1,174 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgb(255, 221, 227);
+    color: lightgray;
+    border: 1px solid lightgray;
+  }
+  
+ .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    position: relative;
+    display: flex;
+    color: rgb(0, 0, 0);
+  }
+  
+  .nar{
+    background-color: black;
+  }
+
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgb(92, 92, 92);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline  rgb(187, 38, 207);
+  }
+  
+  .signin a {
+    color: rgb(187, 38, 207);
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+
+    background-color: rgb(255, 221, 227);
+    color:  rgb(92, 92, 92);
+    width: 100%;
+    padding: 30px 05px 05px 10px;
+    outline: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid rgba(105, 105, 105, 0.397);
+  }
+  
+  .form label .input + span {
+    color:  rgb(92, 92, 92);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+
+  .form label .input:focus {
+    border-color: rgb(187, 38, 207);
+  }
+  .input {
+    font-size: medium;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: rgb(187, 38, 207);
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: rgb(187, 38, 207);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  .form .gender-box {
+    margin-top: 20px;
+  }
+  .gender-box h3 {
+    color: rgb(92, 92, 92);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+  .form .gender {
+    column-gap: 5px;
+  }
+  .gender input {
+    accent-color: rgb(187, 38, 207);
+  }
+  .form :where(.gender input, .gender label) {
+    cursor: pointer;
+  }
+  .gender label {
+    color: #707070;
+  }
+  .address :where(input, .select-box) {
+    margin-top: 15px;
+  }
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+  }
+  .warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #707070;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+  /*Direccion*/
+
+  .direccion{
+    background-color: rgb(229, 229, 229);
+    max-height: 350px;
+  }
+
+  .form label .check + span{
+    color: rgb(92, 92, 92);
+  }
+
+  /*rut*/
